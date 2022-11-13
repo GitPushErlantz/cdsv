@@ -5,7 +5,7 @@
 (This app is NOT ready for actual use, it's just a quick project to practice my skills and learn more about mobile development)
 
 <p align="center">
-  <img width="800" height="450" src="https://i.ibb.co/4pgJKmc/cdsv-Banner.png">
+  <img src="https://i.ibb.co/4pgJKmc/cdsv-Banner.png">
 </p>
 
 cdsv is an easy-to-use app that lets you save your playlists, albums and mixes in a simple .csv file, accessible from the app itself. The app asks the user for the list's metadata and the song information, so it's easy to export it into a simple file for different utilities, like YouTube playlists or CD labels (which was the original purpose of the app!).
