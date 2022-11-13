@@ -2,6 +2,8 @@
 
 ### A simple android app to convert your mixes and albums into a quick, stylish list.
 
+(This app is NOT ready for actual use, it's just a quick project to practice my skills and learn more about mobile development)
+
 <p align="center">
   <img width="800" height="450" src="https://i.ibb.co/4pgJKmc/cdsv-Banner.png">
 </p>
