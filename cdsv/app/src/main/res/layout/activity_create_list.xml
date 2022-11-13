@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateList">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvTitlebarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/manroperegular"
+            android:text="@string/newList"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toTopOf="@+id/tvTitlebarTitle"
+            app:layout_constraintStart_toStartOf="@+id/tvTitlebarTitle"
+            app:srcCompat="@drawable/logo49"
+            app:tint="?attr/colorOnPrimary" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/edtListName"
+            android:text="@string/title"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtListName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="34sp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/txtAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/edtListAuthor"
+            android:text="@string/author"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtListAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="24sp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/txtType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/edtListAuthor"
+            android:text="@string/type"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/cbTypeSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/type"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/txtColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/color"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rgColor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbTeal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="teal"
+                android:theme="@style/teal" />
+
+            <RadioButton
+                android:id="@+id/rbBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="blue"
+                android:theme="@style/blue" />
+
+            <RadioButton
+                android:id="@+id/rbPurple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="purple"
+                android:theme="@style/purple" />
+
+            <RadioButton
+                android:id="@+id/rbOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="orange"
+                android:theme="@style/orange" />
+
+            <RadioButton
+                android:id="@+id/rbBlackWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="bw"
+                android:theme="@style/bw" />
+        </RadioGroup>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/manroperegular"
+                android:onClick="save"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:theme="@style/bw"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

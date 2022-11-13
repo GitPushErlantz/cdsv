@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name" translatable="false">cdsv</string>
+    <string name="lists">Lists</string>
+    <string name="album">Album</string>
+    <string name="mix">Mix</string>
+    <string name="unknown">Unknown</string>
+    <string name="newList">New list</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="color">Color</string>
+    <string name="type">Type</string>
+    <string-array name="types_array">
+        <item>Unknown</item>
+        <item>Album</item>
+        <item>Mix</item>
+    </string-array>
+    <string name="newAlbum">New Album</string>
+    <string name="newMix">New mix</string>
+    <string name="save">Save</string>
+    <string name="noSemicolon">Please input a name without using semicolons</string>
+    <string name="listCreated">List created successfully</string>
+    <string name="errorCreatingList">Error while creating list, please try again</string>
+    <string name="noEmpty">Please fill all the fields</string>
+    <string name="noLists">There are no lists! How about creating a new one?</string>
+    <string name="newSong">New song</string>
+    <string name="artist">Artist</string>
+    <string name="duration">Duration</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="link">Link</string>
+    <string name="linkOptional">Link (optional)</string>
+    <string name="noSongs">There aren\'t any songs in this list (yet!)</string>
+    <string name="fileError">A file error occurred, somehow</string>
+    <string name="songAdded">Song added successfully</string>
+    <string name="invalidSeconds">Seconds must be under 60</string>
+    <string name="importSong">Import song</string>
+    <string name="wrongLink">The link must be from YouTube</string>
+</resources>

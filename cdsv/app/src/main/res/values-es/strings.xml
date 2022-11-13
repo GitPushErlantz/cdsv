@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lists">Listas</string>
+    <string name="album">Álbum</string>
+    <string name="mix">Mix</string>
+    <string name="unknown">Desconocido</string>
+    <string name="newList">Nueva lista</string>
+    <string name="title">Título</string>
+    <string name="author">Autor</string>
+    <string name="color">Color</string>
+    <string name="type">Tipo</string>
+    <string-array name="types_array">
+        <item>Desconocido</item>
+        <item>Álbum</item>
+        <item>Mix</item>
+    </string-array>
+    <string name="newAlbum">Nuevo álbum</string>
+    <string name="newMix">Nuevo mix</string>
+    <string name="save">Guardar</string>
+    <string name="noSemicolon">Por favor inserte un nombre sin \";\"</string>
+    <string name="listCreated">Lista creada exitosamente</string>
+    <string name="errorCreatingList">Ha habido un error, intentelo de nuevo</string>
+    <string name="noEmpty">Por favor, rellene todos los campos</string>
+    <string name="noLists">¡No hay listas! ¿Qué te parece crear una nueva?</string>
+    <string name="newSong">Nueva canción</string>
+    <string name="artist">Artista</string>
+    <string name="duration">Duración</string>
+    <string name="minutes">Minutos</string>
+    <string name="seconds">Segundos</string>
+    <string name="link">Enlace</string>
+    <string name="linkOptional">Enlace (opcional)</string>
+    <string name="noSongs">Esta lista no tiene canciones (¡todavía!)</string>
+    <string name="fileError">Ha ocurrido un error con el archivo, de algún modo</string>
+    <string name="songAdded">Canción añadida exitosamente</string>
+    <string name="invalidSeconds">Los segundos tienen que ser menos de 60</string>
+    <string name="importSong">Importar canción</string>
+    <string name="wrongLink">El enlace debe ser de YouTube</string>
+</resources>
