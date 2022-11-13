@@ -19,4 +19,5 @@ The iconography and UI is mostly inspired by older geometric designs, formerly u
 - (α) Import songs directly from YouTube (using intents)
 
 \*Warning: some of these features, marked in alpha (α) and beta (β) are not fully available in the app, and are being worked on for future versions.
+
 \*Warning 2: this is purely spaghetti code
