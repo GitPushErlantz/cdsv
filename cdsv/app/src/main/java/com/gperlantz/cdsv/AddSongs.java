@@ -41,17 +41,22 @@ public class AddSongs extends AppCompatActivity {
         String minutes = edtMinutes.getText().toString();
         String seconds = edtSeconds.getText().toString();
         String link = edtLink.getText().toString();
+        boolean isValid = false;
         if (title.isEmpty() || artist.isEmpty() || minutes.isEmpty() || seconds.isEmpty()) {
             Toast.makeText(this, getResources().getString(R.string.noEmpty), Toast.LENGTH_SHORT).show();
         } else if (link.isEmpty()) {
             link = "NOLINK";
-        } else if (!link.startsWith("https://youtu.be/") || !link.startsWith("https://youtube.com/watch?v=")) {
+            isValid = true;
+        } else if (!link.startsWith("https://youtu.be/") && !link.startsWith("https://youtube.com/watch?v=")) {
             Toast.makeText(this, getResources().getString(R.string.wrongLink), Toast.LENGTH_SHORT).show();
         } else if (title.contains(";") || artist.contains(";") || minutes.contains(";") || seconds.contains(";") || link.contains(";")) {
             Toast.makeText(this, getResources().getString(R.string.noSemicolon), Toast.LENGTH_SHORT).show();
         } else if (Integer.parseInt(seconds) > 59) {
             Toast.makeText(this, getResources().getString(R.string.invalidSeconds), Toast.LENGTH_SHORT).show();
         } else {
+            isValid = true;
+        }
+        if (isValid) {
             try (PrintWriter pw = new PrintWriter(new File(this.getFilesDir(), fileName))) {
                 for (String song : songs) {
                     pw.println(song);
@@ -65,7 +70,7 @@ public class AddSongs extends AppCompatActivity {
             finish();
         }
     }
-
+    
     public ArrayList<String> readCsvSongs() {
         ArrayList<String> songs = new ArrayList<>();
         String fileName = getIntent().getExtras().getString("filename");
