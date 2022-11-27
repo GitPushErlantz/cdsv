@@ -45,7 +45,7 @@ public class AddSongs extends AppCompatActivity {
             Toast.makeText(this, getResources().getString(R.string.noEmpty), Toast.LENGTH_SHORT).show();
         } else if (link.isEmpty()) {
             link = "NOLINK";
-        } else if (!link.startsWith("https://youtu.be/") || !link.startsWith("https://youtube.com/watch?v=")) {
+        } else if (!link.startsWith("https://youtu.be/") && !link.startsWith("https://youtube.com/watch?v=")) {
             Toast.makeText(this, getResources().getString(R.string.wrongLink), Toast.LENGTH_SHORT).show();
         } else if (title.contains(";") || artist.contains(";") || minutes.contains(";") || seconds.contains(";") || link.contains(";")) {
             Toast.makeText(this, getResources().getString(R.string.noSemicolon), Toast.LENGTH_SHORT).show();
